@@ -16,6 +16,8 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
 }
 
 .main-container {
@@ -58,13 +60,51 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ******/
+
+.header-nav {
+    max-width: 1440px;
+    height: 79px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-nav nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 68px;
+    width: 23.9%;
+    height: 35px;
+}
+.header-nav nav a{
+    padding-top: 16px;
+}
+
+.booki-logo {
+    width: 11.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booki-logo img{
+    width: 61.09px;
+    height: 19px;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+#hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+#hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -129,7 +169,7 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+    #hebergements-and-populaires {
         flex-direction: column;
     }
 
