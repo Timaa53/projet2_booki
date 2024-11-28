@@ -69,6 +69,19 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.header-nav div{
+    width: 11.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav div img{
+    width: 61.09px;
+    height: 19px;
+}
+
 .header-nav nav{
     display: flex;
     flex-direction: row;
@@ -79,20 +92,9 @@ a {
 }
 .header-nav nav a{
     padding-top: 16px;
+    border-top: 2px  solid transparent;
 }
-
-.booki-logo {
-    width: 11.2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.booki-logo img{
-    width: 61.09px;
-    height: 19px;
-}
-
-.nav-link:hover {
+.header-nav nav a:hover{
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
