@@ -18,6 +18,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-top: 0;
+    gap: 30px;
 }
 
 .main-container {
@@ -25,6 +26,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    gap: 35px;
 }
 
 a {
@@ -97,6 +99,55 @@ a {
 .header-nav nav a:hover{
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
+}
+
+/* Recherche d'hébergement */
+
+.accomodation-search {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.accomodation-search-bar {
+    width: 63.4%;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid var(--main-bg-color);
+}
+.accomodation-search-bar div i{
+    width: 50px;
+    height: 49px;
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.fa-location-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.accomodation-search-bar form input{
+    width: 195px;
+    height: 21px;
+    display: flex;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.accomodation-search-bar button{
+    width: 132px;
+    height: 49px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
 }
 
 
