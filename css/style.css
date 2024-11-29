@@ -34,6 +34,10 @@ a {
     text-decoration: none;
 }
 
+.title-h3 {
+    font-size: 18px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -110,13 +114,14 @@ a {
 }
 
 .accomodation-search-bar {
-    width: 63.4%;
+    width: 28%;
     height: 49px;
     display: flex;
     align-items: center;
     border-radius: 15px;
     border: 1px solid var(--main-bg-color);
 }
+
 .accomodation-search-bar div i{
     width: 50px;
     height: 49px;
@@ -138,6 +143,9 @@ a {
     text-align: center;
     border: none;
     outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 25px 0;
 }
 .accomodation-search-bar button{
     width: 132px;
@@ -150,6 +158,54 @@ a {
     font-weight: 700;
 }
 
+.accomodation-filters {
+    display: flex;
+    align-items: center;
+    width: 56.6%;
+    height: 50px;
+    gap: 15px;
+}
+
+.accomodation-filters button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    background-color: transparent;
+    height: 100%;
+    padding: 4px 19px;
+}
+
+.accomodation-filters button span{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.accomodation-filters button:hover{
+    background-color: var(--filter-bg-color);
+}
+
+.accomodation-infobar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.fa-circle-info {
+    display: flex;
+    color: white;
+    background-color: var(--main-color);
+    border: 4px solid #D9D9D9;
+    height: 18px;
+    width: 18px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
 
 /****** Hebergements And Populaires ***********/
 #hebergements-and-populaires {
