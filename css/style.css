@@ -338,19 +338,44 @@ a {
 
 /* Activités */
 
+#id-activites{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.activites-cards {
+    width: 95.52%;
+    height: 439px;
+    display: flex;
+    gap: 30px;
+}
+
+.activites-cards a{
+    width: 23.24%;
+    height: 100%;
+}
+
+.activites-cards article{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.activites-cards article img{;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-cards article h3{
+    padding-left: 19px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Footer */
 
 
 
