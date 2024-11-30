@@ -26,6 +26,11 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+.main-container main{
+    display: flex;
+    flex-direction: column;
     gap: 35px;
 }
 
@@ -66,8 +71,8 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Header ******/
 
+/****** Header ******/
 .header-nav {
     max-width: 1440px;
     height: 79px;
@@ -105,8 +110,8 @@ a {
     border-top: 2px solid var(--main-color);
 }
 
-/* Recherche d'hébergement */
 
+/* Recherche d'hébergement */
 .accomodation-search {
     display: flex;
     flex-direction: column;
@@ -122,8 +127,11 @@ a {
     border: 1px solid var(--main-bg-color);
 }
 
+.accomodation-search-bar div{
+    width: 13.53%;
+}
+
 .accomodation-search-bar div i{
-    width: 50px;
     height: 49px;
     background-color: var(--main-bg-color);
     border-top-left-radius: 15px;
@@ -146,7 +154,12 @@ a {
     font-size: 18px;
     font-weight: 700;
     padding: 25px 0;
+    
 }
+.accomodation-search-bar form input::placeholder{
+    color: black;
+}
+
 .accomodation-search-bar button{
     width: 132px;
     height: 49px;
@@ -207,10 +220,12 @@ a {
     justify-content: center;
 }
 
+
 /****** Hebergements And Populaires ***********/
 #hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 #hebergements-and-populaires section {
@@ -220,10 +235,60 @@ a {
     box-sizing: border-box;
 }
 
+
 /****** Hebergements ***********/
 .hebergements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 65%;
 }
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hebergements-cards article{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    gap: 4px;
+    height: 207.25px;
+}
+
+.hebergements-cards a{
+    width: 30.86%;
+}
+
+.hebergements-cards img{
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 5px;
+}
+
+.hebergements-cards .hebergements-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.hebergements-cards .card-title {
+    margin: 0;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergement-afficherplus {
+    font-size: 18px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -269,6 +334,25 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+
+/* Activités */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
