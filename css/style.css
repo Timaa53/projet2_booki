@@ -123,7 +123,7 @@ a {
 }
 
 .accomodation-search-bar {
-    width: 28%;
+    width: 375px;
     height: 49px;
     display: flex;
     align-items: center;
@@ -131,11 +131,8 @@ a {
     border: 1px solid var(--main-bg-color);
 }
 
-.accomodation-search-bar div{
-    width: 13.53%;
-}
-
 .accomodation-search-bar div i{
+    width: 50px;
     height: 49px;
     background-color: var(--main-bg-color);
     border-top-left-radius: 15px;
@@ -364,7 +361,7 @@ a {
     padding: 0;
 }
 
-.activites-cards article img{;
+.activites-cards article img{
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -390,8 +387,6 @@ a {
     padding: 20px;
     width: 33.28%;
 }
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -432,6 +427,6 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) and (min-width: 320px) {
     /* ... */
 }
