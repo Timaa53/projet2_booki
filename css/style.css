@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 0;
+    margin:0;
     gap: 30px;
 }
 
@@ -41,6 +41,7 @@ a {
 
 .title-h3 {
     font-size: 18px;
+    font-weight: 700;
 }
 
 .section-title {
@@ -285,10 +286,6 @@ a {
     margin: 0;
 }
 
-.hebergement-afficherplus {
-    font-size: 18px;
-}
-
 
 /****** Populaires ***********/
 .populaires {
@@ -377,7 +374,19 @@ a {
 
 /* Footer */
 
+.footer-main {
+    width: 100%;
+    display: flex;
+    background-color: var(--main-bg-color);
+}
 
+.footer-main div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    width: 33.28%;
+}
 
 
 
