@@ -388,7 +388,6 @@ a {
 .footer-main div{
     display: flex;
     flex-direction: column;
-    /* gap: 15px; */
     width: 33.28%;
     padding: 0 20px;
 }
@@ -472,5 +471,23 @@ a {
 @media (max-width: 767.98px) {
 
 /****** Général ******/
+    
 
+/****** Header ******/
+    .header-nav{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .header-nav nav{
+        justify-content: center;
+    }
+
+    .header-nav nav a{
+    }
+
+    .header-nav nav a:hover{
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
 }
