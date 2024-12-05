@@ -108,7 +108,7 @@ a {
 }
 .header-nav nav a{
     padding-top: 16px;
-    border-top: 2px  solid transparent;
+    border-top: 2px solid transparent;
 }
 .header-nav nav a:hover{
     color: var(--main-color);
@@ -468,26 +468,46 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) and (min-width: 320px) {
 
 /****** Général ******/
-    
+
+.main-container main{
+    gap: 30px;
+}
 
 /****** Header ******/
     .header-nav{
         flex-direction: column;
         align-items: center;
+        margin-bottom: 30px;
+    }
+
+     .header-nav div{
+        display: flex;
+        width: 17.26%; /* a revoir car 32.29% sur maquette figma */
+        justify-content: center;
         padding: 30px;
     }
+
     .header-nav nav{
-        justify-content: center;
+        width: 100%;
+        gap: 0;
+        padding: 10px 0;
     }
 
     .header-nav nav a{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 2px solid transparent;
     }
+
 
     .header-nav nav a:hover{
         border-top: none;
         border-bottom: 2px solid var(--main-color);
-    }
+        width: 100%;
+    }    
 }
