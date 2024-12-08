@@ -90,6 +90,7 @@ a {
     display: flex;
     justify-content:flex-start;
     align-items: center;
+    padding: 30px 0;
 }
 
 .header-nav div img{
@@ -124,7 +125,7 @@ a {
 
 .accomodation-search-bar {
     width: 375px;
-    height: 49px;
+    height: 47px;
     display: flex;
     align-items: center;
     border-radius: 15px;
@@ -133,7 +134,7 @@ a {
 
 .accomodation-search-bar div i{
     width: 50px;
-    height: 49px;
+    height: 48px;
     background-color: var(--main-bg-color);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -147,29 +148,41 @@ a {
 
 .accomodation-search-bar form input{
     width: 195px;
-    height: 21px;
+    height: 47px;
     display: flex;
     text-align: center;
     border: none;
     outline: none;
     font-size: 18px;
     font-weight: 700;
-    padding: 25px 0;
     
 }
 .accomodation-search-bar form input::placeholder{
     color: black;
 }
 
-.accomodation-search-bar button{
+.accomodation-search-bar .search-btn-main{
     width: 132px;
-    height: 49px;
+    height: 48px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
     background-color: var(--main-color);
     color: white;
     font-weight: 700;
+}
+
+.accomodation-search-bar .search-btn-mobile{
+    width: 49px;
+    height: 48px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    border: var(--main-color);
+    font-size: 17px;
+    display: none;
 }
 
 .accomodation-filters {
@@ -182,6 +195,7 @@ a {
 
 .filters-buttons{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -456,12 +470,10 @@ a {
         font-size: 13px;
     }
 
-
 /****** Activités ******/
     #id-activites {
         max-width: 924px;
         width: 100%;
-        padding: 30px;
     }
     .activites-cards {
         width: 93.5%;
@@ -494,7 +506,7 @@ a {
 
      .header-nav div{
         display: flex;
-        width: 17.26%; /* a revoir car 32.29% sur maquette figma */
+        width: 17.26%; 
         justify-content: center;
         padding: 30px;
     }
@@ -519,5 +531,115 @@ a {
         border-top: none;
         border-bottom: 2px solid var(--main-color);
         width: 100%;
-    }    
+    }
+
+/****** Recherche d'hébergement ******/
+    .accomodation-search{
+        padding: 0 20px;
+    }
+
+    .search-btn-main{
+        display: none;
+    }
+
+    .accomodation-search-bar{
+        width: auto;
+        justify-content: space-between;
+
+    }
+
+    .accomodation-search-bar .search-btn-mobile{
+        display: flex;
+    }
+
+    .accomodation-filters{
+        gap: 20px;
+    }
+
+    .filters-buttons{
+        gap: 10px;
+    }
+
+    .filters-buttons button{
+        width: 162.5px;
+    }
+
+/****** Hebergements And Populaires ***********/
+    #hebergements-and-populaires{
+        gap: 15px;
+    }
+
+    #hebergements-and-populaires section{
+        padding: 20px;
+    }
+
+    .populaires-cards{
+        flex-direction: column;
+    }
+    .populaires-cards .card{
+        margin-top: 15px;
+        
+    }
+
+    .populaires-cards a{
+        width: 100%;
+    }
+
+    .populaires{
+        order: 1;
+    }
+
+    #hebergements-and-populaires .hebergements{
+        order: 2;
+        background-color: transparent;
+    }
+
+    .hebergements-cards{
+        flex-direction: column;
+    }
+    .hebergements-cards a{
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .hebergements .title-h3{
+        margin-top: 30px;
+        
+    }
+
+/****** Activités ******/
+    #id-activites{
+        box-sizing: border-box;
+        padding-top: 0;
+    }
+
+    .activites-cards{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .activites-cards a{
+        width: 100%;
+    }
+    .activites-cards article{
+
+    }
+    .activites-cards article img{
+        height: 141px;
+    }
+
+/****** Footer ******/
+    .footer-main {
+        flex-direction: column;
+        padding: 30px;
+        box-sizing: border-box;
+        gap: 50px;
+        height: auto;
+    }
+
+    .footer-main div{
+        padding: 0;
+        width: 100%;
+    }
 }
