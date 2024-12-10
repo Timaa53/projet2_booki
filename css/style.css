@@ -433,9 +433,6 @@ a {
         display: flex;
     }
 
-    .filters-buttons .nos-pepites {
-        background-color: var(--filter-bg-color);
-    }
 
 /****** Hebergements And Populaires ***********/
     #hebergements-and-populaires {
@@ -552,6 +549,8 @@ a {
 
     .accomodation-search-bar form input{
         flex-grow: 1;
+        text-align: initial;
+        text-indent: 20px;
     }
 
     .accomodation-search-bar .search-btn-mobile{
@@ -568,6 +567,7 @@ a {
 
     .filters-buttons button{
         width: 162.5px;
+        justify-content: start;
     }
 
 /****** Hebergements And Populaires ***********/
